@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td></td>
+<td>
+<a href="<{$xoops_url}>/"><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/top_bar_home.gif" alt="home" align="left" /></a>
+<a href="<{$xoops_url}>/modules/news/"><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/top_bar_news.gif" alt="login" align="left" /></a>
+<a href="<{$xoops_url}>/modules/newbb/"><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/top_bar_forum.gif" alt="login" align="left" /></a>
+<a href="<{$xoops_url}>/user.php"><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/top_bar_profile.gif" alt="profile" align="left" /></a>
+<a href="<{$xoops_url}>/search.php"><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/top_bar_search.gif" alt="search" align="left" /></a>
+<a href="<{$xoops_url}>/register.php"><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/top_bar_register.gif" alt="register" align="left" /></a>
+</td>
+<td></td>
+<tr>
+<td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/tt12_l.gif" /></td>
+<td class="tt12_m" width="100%"></td>
+<td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/tt12_r.gif" /></td>
+</tr>
+<tr>
+<td class="bg" colspan="3"><br />
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="wh">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="scrn_tl" width="14" height="14"></td>
+<td class="scrn_t" height="14"></td>
+<td class="scrn_tr" width="14" height="14"></td></tr>
+<tr>
+<td class="scrn_l" width="14"></td>
+<td class="wh2">
+WELCOME TO MY WEBSITE !</td>
+<td class="scrn_r" width="14"></td></tr>
+<tr>
+<td class="scrn_bl" width="14" height="14"></td>
+<td class="scrn_b" height="14"></td>
+<td class="scrn_br" width="14" height="14"></td></tr>
+</table>
+<br />
+</td></tr>
+<tr><td>
+<table cellspacing="2" cellpadding="2" class="whi">
+<tr><td width="20%" class="wh">
+<!-- Start left blocks loop -->
+<{foreach item=block from=$xoops_lblocks}>
+<table cellspacing="0" cellpadding="2" width="100%">
+<tr>
+<td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/tt12_l.gif" /></td>
+<td class="tt12_m" width="100%"></td>
+<td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/tt12_r.gif" /></td></tr>
+<tr><td colspan="3" class="blockTitle2" width="100%">&nbsp;<{$block.title}></td></tr>
+<tr><td colspan="3" class="blockContent" width="100%"><{$block.content}></td></tr>
+<tr><td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/tb12_l.gif" /></td>
+<td class="tb12_m"></td>
+<td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/tb12_r.gif" /></td></tr>
+</table>
+<br />
+<{/foreach}>
+<!-- Fim do "loop" dos blocos da esquerda -->
+</td>
+<td style="padding: 0px 5px 0px;" class="wh">
+<!-- Display center blocks if any -->
+<{if $xoops_showcblock == 1}>
+<table cellspacing="0">
+<tr><td width="100%" colspan="2">
+<!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}>
+<table width="100%" cellspacing="0">
+<tr>
+<td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/tt12_l.gif" /></td>
+<td class="tt12_m" width="100%"></td>
+<td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/tt12_r.gif" /></td>
+</tr>
+<tr>
+<td colspan="3" class="blockTitle">&nbsp;<{$block.title}></td>
+</tr>
+<tr>
+<td colspan="3" class="blockContent"><{$block.content}></td>
+</tr>
+<tr>
+<td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/tb12_l.gif" /></td>
+<td class="tb12_m" width="100%"></td>
+<td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/tb12_r.gif" /></td>
+</tr>
+</table>
+<br />
+<{/foreach}>
+<!-- End center-center blocks loop -->
+</td></tr>
+<tr><td width="50%">
+<!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}>
+<table cellspacing="1" cellpadding="5">
+<tr> <td class="blockTitle">&nbsp;<{$block.title}></td></tr>
+<tr><td class="blockContent"><{$block.content}></td></tr></table>
+<br />
+<{/foreach}>
+<!-- End center-left blocks loop -->
+</td><td width="50%">
+<!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}>
+<table cellspacing="1" cellpadding="5">
+<tr> <td class="blockTitle">&nbsp;<{$block.title}></td></tr>
+<tr><td class="blockContent"><{$block.content}></td></tr></table>
+<br />
+<{/foreach}>
+<!-- End center-right blocks loop -->
+</td></tr></table>
+<{/if}>
+<!-- End display center blocks -->
+<div id="content"><{$xoops_contents}></div></td>
+<{if $xoops_showrblock == 1}>
+<td class="wh" width=20% align=center class="wh">
+<!-- Início dos blocos da direita -->
+<{foreach item=block from=$xoops_rblocks}>
+<table cellspacing="0" cellpadding="2" width="100%">
+<tr>
+<td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/tt12_l.gif" /></td>
+<td class="tt12_m" width="100%"></td>
+<td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/tt12_r.gif" /></td></tr>
+<tr><td colspan="3" class="blockTitle2" width="100%">&nbsp;<{$block.title}></td></tr>
+<tr><td colspan="3" class="blockContent" width="100%"><{$block.content}></td></tr>
+<tr><td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/tb12_l.gif" /></td>
+<td class="tb12_m"></td>
+<td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/tb12_r.gif" /></td></tr>
+</table>
+<br /><{/foreach}>
+<!-- End right blocks loop -->
+<{/if}></td></tr></table>
+</td></tr>
+<tr><td height="30" valign="middle"2 align="center">
+<p style="text-align: center; padding-top: 5px;"><{$xoops_banner}></p>
+<div style="text-align: center; padding-top: 2px; font-size: 10px"><{$xoops_footer}></div>
+<div>:: FI Apple Pink phpBB2 style by <a href="http://www.forumimagens.com/" target="_blank">Daz</a> :: XOOPS2 theme by <a href="http://peekaboo.s8.xrea.com/" target="_blank">PetitOOps</a> ::</div><br />
+</td></tr>
+</table>
+</td></tr>
+<td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/tb12_l.gif" /></td>
+<td class="tb12_m" width="100%"></td>
+<td><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/tb12_r.gif" /></td>
+</tr>
+</table>
+</body>
+</HTML>
